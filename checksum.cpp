@@ -12,11 +12,6 @@ bool verify_checksum( unsigned int n );
 unsigned int remove_checksum( unsigned int n );
 void remove_checksum( unsigned int array[], std::size_t capacity );
 
-#ifndef MARMOSET_TESTING
-int main();
-#endif
-
-#ifndef MARMOSET_TESTING
 int main() 
 {
 	unsigned int value_to_protect{21352411};
@@ -41,7 +36,7 @@ int main()
 	std::cout << std::endl;
 	return 0;
 }
-#endif
+
 
 unsigned int add_checksum( unsigned int n )
 {
